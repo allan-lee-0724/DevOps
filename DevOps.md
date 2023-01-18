@@ -31,9 +31,13 @@ There are 5 steps to the DevOps practice:
 # DevOps in Agile Methodology
 In Agile methodologies (like Scrum) that make use of DevOps practices there are a few terms that are used to describe what levels of DevOps automation/practice is being used: 
 
-- Continuous Integration (CI) # Step 1
+- *Continuous Integration* (CI) # Step 1
     - This is the practice of consistently merging code into a central repository that helps to ensure everyone involved in the process is working the same up to date source code
     - This practice also involves code reviews before allowing new work to be merged into the main source code location (like a main branch of a git repository)
-- Continuous Delivery (CD) # Steps 2-4
+- *Continuous Delivery* # Steps 2-4
     - This is the practice of automating as much as is reasonable of steps 2-4 of the DevOps process
-    
+    - Continuous Delivery does not require that you automate EVERYTHING in the DevOps process, as this would be an unreasonable demand on many companies. The ideal is to automate as much of the DevOps process as is reasonable for your situation. This will depend on factors such as resource availability, team size, scope of your application, etc. 
+    - Because of this, the term is somewhat nebulous, so if you are ever told your team practices Continuous Delivery you should ask follow-up questions to better understand the DevOps pipeline you are going to work with
+- *Continuous Deployment*
+    - This is the all encompassing DevOps practice: if you can automate your entire DevOps pipeline reasonably then you are practicing Continuous Deployment
+    - When things don't go wrong, a Continuous Deployment practice allows for the entirety of the pipeline to be automated, and a good Continuous Deployment pipeline will have safeguards in place so taht if something does go wrong the pipeline can handle it and ensure that faulty code does not get sent to the production environment and exposed to end users.
